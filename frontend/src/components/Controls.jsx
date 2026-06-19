@@ -20,13 +20,6 @@ export default function Controls({
           </label>
           <input type="range" min={5} max={30} value={cols} onChange={e => onColsChange(Number(e.target.value))} />
         </div>
-        <div className="control-row">
-          <label className="control-label">
-            <span>Animation speed</span>
-            <span className="control-value">{animationSpeed}ms</span>
-          </label>
-          <input type="range" min={10} max={200} step={10} value={animationSpeed} onChange={e => onAnimationSpeedChange(Number(e.target.value))} />
-        </div>
       </div>
       <div className="control-buttons">
         <button className="btn-secondary" onClick={onGenerate} disabled={isAnimating}>Generate</button>
